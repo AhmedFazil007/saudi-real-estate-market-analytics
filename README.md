@@ -45,6 +45,10 @@ The next step in a real company would be to connect these patterns to actual lea
 
 For the numbers behind these observations, see my [business case and recommendations](docs/BUSINESS_CASE_AND_INSIGHTS.md).
 
+## Executive insights page plan
+
+I've documented a [proposed executive insights page](docs/EXECUTIVE_INSIGHTS_PAGE.md), including the key business findings, suggested layout, DAX examples and a Power BI Desktop QA checklist. This is a design specification; the native report has not yet been modified to include the extra page.
+
 ## Tools and approach
 
 - **Power BI:** Five-page report, interactive visuals, DAX measures and an editable project.
