@@ -1,13 +1,20 @@
 # Final portfolio verification
 
-- [x] PBIX report uploaded under `powerbi/`.
-- [x] PBIP entry file and Report folder moved under `powerbi/`.
-- [x] Synthetic CSV and analysis results uploaded.
-- [x] Python and SQL scripts uploaded.
-- [ ] **Upload `powerbi/Saudi_Real_Estate_Analytics.SemanticModel/` including all internal files.**
-- [ ] Open PBIX in Power BI Desktop and confirm all five pages render.
-- [ ] Verify page headers, filters, measures, chart labels and data refresh.
-- [ ] After semantic model upload, test the PBIP independently.
-- [ ] Add actual dashboard screenshots to the README if desired.
+## GitHub repository checks
 
-The synthetic dataset must not be presented as official Saudi market data.
+- [x] PBIX report uploaded under `powerbi/`.
+- [x] PBIP entry file under `powerbi/`.
+- [x] Report definition folder under `powerbi/` (5 pages and 80 visual definitions).
+- [x] Semantic model folder under `powerbi/` (including `definition.pbism` and `model.bim`).
+- [x] Synthetic CSV and saved analysis outputs uploaded.
+- [x] Python and SQL scripts uploaded.
+- [x] README documents synthetic-data limitations.
+
+## Validate locally in Power BI Desktop
+
+- [ ] Open `powerbi/Saudi_Real_Estate_Analytics.pbix` and check the five pages, titles, charts and slicers.
+- [ ] Open `powerbi/Saudi_Real_Estate_Analytics.pbip` separately and confirm the semantic model loads.
+- [ ] Refresh data, verify calculations and filter interactions.
+- [ ] Capture screenshots for GitHub and verify the report works after reopening.
+
+The data is synthetic and must not be presented as actual Saudi market statistics.
