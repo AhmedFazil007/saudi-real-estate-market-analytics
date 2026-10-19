@@ -1,0 +1,44 @@
+{
+  "name": "CY26SU02",
+  "dataColors": [
+    "#81971C",
+    "#B1C440",
+    "#536B1E",
+    "#C8D68B",
+    "#A0AC56",
+    "#697A2C",
+    "#DCE7AC"
+  ],
+  "background": "#F4F6E7",
+  "foreground": "#283014",
+  "tableAccent": "#A5BE2A",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#1C3541"
+              }
+            },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f9bebe19f51b4dbd9b4f",
+  "displayName": "02 | Property Type Analysis",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

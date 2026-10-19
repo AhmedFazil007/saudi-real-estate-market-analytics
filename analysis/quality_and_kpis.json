@@ -1,0 +1,19 @@
+{
+  "rows": 12000,
+  "unique_ids": 12000,
+  "date_min": "2021-01-01",
+  "date_max": "2025-12-31",
+  "value": 12459884218.0,
+  "median_price": 912309.0,
+  "avg_price": 1038323.6848333334,
+  "weighted_ppsqm": 3698.235271804416,
+  "median_ppsqm": 3741.82,
+  "area": 3369143.2,
+  "cities": 10,
+  "types": 4,
+  "duplicate_rows": 0,
+  "missing_values": 0,
+  "zero_or_negative_prices": 0,
+  "zero_or_negative_area": 0,
+  "approx_price_per_sqm_discrepancy_gt_10sar": 0
+}
