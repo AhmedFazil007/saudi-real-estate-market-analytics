@@ -38,6 +38,23 @@ The five screenshots below are organized in upload timestamp order. They show th
 
 These figures describe the supplied simulated dataset only.
 
+## Business problem and decision support
+
+**Business question:** How could a hypothetical Saudi real-estate brokerage prioritize city research, property-segment coverage and financing partnerships using transaction-level analytics?
+
+**Illustrative findings from synthetic data:**
+
+| Insight | Quantified result | Decision it could inform |
+|---|---|---|
+| Riyadh leads on simulated transaction value | SAR **1.722B**, approximately **13.8%** of the dataset | Prioritize deeper city and property-type research |
+| Villas contribute a disproportionate share of value | **24.6%** of transactions but **37.4%** of transaction value | Compare high-ticket and volume-oriented client strategies |
+| Financing is relatively balanced | Cash **34.1%**, mortgage **33.1%**, developer finance **32.8%** | Test differentiated financing-related customer journeys |
+| Value and volume tell different stories | 2021–2025 value **+16.4%**, but both years have **2,337** transactions | Report value, volume and median price together |
+
+These are **simulated analytical findings**, not measured business outcomes. A real organization would need operational data and a pilot before claiming revenue, conversion or cost impact.
+
+**[Read the full business case, quantified insights, recommendations and KPI framework](docs/BUSINESS_CASE_AND_INSIGHTS.md).**
+
 ## Repository files
 
 | Path | Contents |
@@ -49,7 +66,7 @@ These figures describe the supplied simulated dataset only.
 | [analysis/](analysis/) | Saved CSV summaries, SQLite database and KPI quality output |
 | [python/](python/) | Python analysis script |
 | [sql/](sql/) | SQL queries |
-| [docs/](docs/) | Usage and submission guidance |
+| [docs/](docs/) | Business case, insights, recommendations and submission checklist |
 
 **Repository status:** The PBIX, PBIP, report definition and semantic model are all uploaded. Local Power BI Desktop validation is still recommended.
 
