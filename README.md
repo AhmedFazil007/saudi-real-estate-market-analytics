@@ -1,99 +1,87 @@
 # Saudi Real Estate Market Analytics
 
-**Power BI • Python • SQL | Portfolio case study | 12,000 synthetic transactions**
+**Power BI · SQL · Python · Data storytelling**
 
-> **Data disclosure:** The transaction data is simulated. Dashboard findings are illustrative and are **not official Saudi real-estate market statistics**.
+I wanted this project to go beyond a dashboard full of numbers. The idea was to explore how transaction data could help a real estate team ask better questions: Which cities deserve a closer look? Which property types account for the most value? Does a rise in transaction value mean more deals, or simply more expensive ones?
 
-## Project overview
+I used **12,000 synthetic property transactions across 10 Saudi cities**, covering 2021–2025. The dataset is simulated, so the findings below are an exercise in analytics and business decision-making—not a description of the actual Saudi property market.
 
-This project analyzes a synthetic dataset of Saudi real estate transactions by city, property type, financing method and time. The Power BI dashboard includes five report pages:
+## A look at the dashboard
 
-1. Market Overview
-2. Property Type & Pricing
-3. Regional Performance
-4. Financing Analysis
-5. Monthly Market Trends
+The Power BI report has five pages: **Market Overview, Property Type & Pricing, Regional Performance, Financing Analysis, and Monthly Market Trends**.
 
-The report was designed at **1920 × 1080** with an olive-green theme, KPI cards, charts and filter slicers.
+![Market dashboard — screenshot 1](assets/screenshots/dashboard-page-01.png)
 
-## Dashboard screenshots
+![Dashboard — screenshot 2](assets/screenshots/dashboard-page-02.png)
 
-The five screenshots below are organized in upload timestamp order. They show the Power BI dashboard pages.
+![Dashboard — screenshot 3](assets/screenshots/dashboard-page-03.png)
 
-![Dashboard screenshot 1](assets/screenshots/dashboard-page-01.png)
+![Dashboard — screenshot 4](assets/screenshots/dashboard-page-04.png)
 
-![Dashboard screenshot 2](assets/screenshots/dashboard-page-02.png)
+![Dashboard — screenshot 5](assets/screenshots/dashboard-page-05.png)
 
-![Dashboard screenshot 3](assets/screenshots/dashboard-page-03.png)
+## What stood out to me
 
-![Dashboard screenshot 4](assets/screenshots/dashboard-page-04.png)
-
-![Dashboard screenshot 5](assets/screenshots/dashboard-page-05.png)
-
-## Dataset and key indicators
-
-- **12,000** synthetic transactions across **10** cities
-- Approximately **SAR 12.46 billion** in simulated transaction value
-- Approximately **SAR 912,309** median simulated transaction price
-
-These figures describe the supplied simulated dataset only.
-
-## Business problem and decision support
-
-**Business question:** How could a hypothetical Saudi real-estate brokerage prioritize city research, property-segment coverage and financing partnerships using transaction-level analytics?
-
-**Illustrative findings from synthetic data:**
-
-| Insight | Quantified result | Decision it could inform |
-|---|---|---|
-| Riyadh leads on simulated transaction value | SAR **1.722B**, approximately **13.8%** of the dataset | Prioritize deeper city and property-type research |
-| Villas contribute a disproportionate share of value | **24.6%** of transactions but **37.4%** of transaction value | Compare high-ticket and volume-oriented client strategies |
-| Financing is relatively balanced | Cash **34.1%**, mortgage **33.1%**, developer finance **32.8%** | Test differentiated financing-related customer journeys |
-| Value and volume tell different stories | 2021–2025 value **+16.4%**, but both years have **2,337** transactions | Report value, volume and median price together |
-
-These are **simulated analytical findings**, not measured business outcomes. A real organization would need operational data and a pilot before claiming revenue, conversion or cost impact.
-
-**[Read the full business case, quantified insights, recommendations and KPI framework](docs/BUSINESS_CASE_AND_INSIGHTS.md).**
-
-## Repository files
-
-| Path | Contents |
+| Finding in the simulated data | Why it matters |
 |---|---|
-| [powerbi/Saudi_Real_Estate_Analytics.pbix](powerbi/Saudi_Real_Estate_Analytics.pbix) | Power BI Desktop report |
-| [powerbi/Saudi_Real_Estate_Analytics.pbip](powerbi/Saudi_Real_Estate_Analytics.pbip) | Editable Power BI project entry point |
-| [powerbi/Saudi_Real_Estate_Analytics.Report/](powerbi/Saudi_Real_Estate_Analytics.Report/) | Report definition, pages, visuals and theme |
-| [data/](data/) | Synthetic source CSV |
-| [analysis/](analysis/) | Saved CSV summaries, SQLite database and KPI quality output |
-| [python/](python/) | Python analysis script |
-| [sql/](sql/) | SQL queries |
-| [docs/](docs/) | Business case, insights, recommendations and submission checklist |
+| **Riyadh** accounts for about **SAR 1.72B** in transaction value, or **13.8%** of the total. | Transaction value and price per square metre can help narrow down cities for further research. |
+| **Villas** make up **24.6%** of transactions but **37.4%** of total value. | A high-value segment isn't necessarily the highest-volume segment. |
+| Financing is split between **cash (34.1%)**, **mortgage (33.1%)** and **developer finance (32.8%)**. | It's worth looking at financing options separately rather than treating every buyer the same. |
+| Annual transaction value increased **16.4%** from 2021 to 2025, while transaction counts were **2,337 in both years**. | Looking at revenue or transaction value alone can hide what's happening to volume and deal size. |
 
-**Repository status:** The PBIX, PBIP, report definition and semantic model are all uploaded. Local Power BI Desktop validation is still recommended.
+Across the full dataset, simulated transaction value is **SAR 12.46B**, with a **SAR 912,309** median transaction price.
 
-## Reproduce the analysis
+These findings are useful as examples of *how* to approach a business question. They don't prove real market demand, returns or revenue growth.
 
-1. Install Python 3 and pandas: `pip install pandas`
+## How I'd use the analysis in a business setting
+
+If I were presenting this to a brokerage or property research team, I'd start with three questions:
+
+- **Where should we look more closely?** Compare city-level value, transaction count and property mix before deciding which markets need further research.
+- **Which buyers might need different approaches?** Compare villas, apartments and other property types, then test whether financing preferences affect the customer journey.
+- **What's really driving a change?** Review transaction volume, median price and total value together instead of assuming that a higher total means a busier market.
+
+The next step in a real company would be to connect these patterns to actual leads, conversions, financing approvals and closed deals. This dataset doesn't contain those business outcomes, so I haven't attached invented revenue or cost-saving figures to the project.
+
+For the numbers behind these observations, see my [business case and recommendations](docs/BUSINESS_CASE_AND_INSIGHTS.md).
+
+## Tools and approach
+
+- **Power BI:** Five-page report, interactive visuals, DAX measures and an editable project.
+- **SQL:** Queries for transaction summaries, regional comparisons, financing mix and year-over-year trends.
+- **Python (pandas):** Data checks and grouped analysis outputs.
+- **SQLite and CSV:** Queryable data and reproducible summary tables.
+
+The saved quality report records **12,000 unique transaction IDs, no missing values and no duplicate rows**.
+
+## Explore the files
+
+| Folder / file | What's inside |
+|---|---|
+| [Power BI report (.pbix)](powerbi/Saudi_Real_Estate_Analytics.pbix) | Dashboard to open in Power BI Desktop |
+| [Editable Power BI project (.pbip)](powerbi/Saudi_Real_Estate_Analytics.pbip) | Project entry point; keep it with its Report and SemanticModel folders |
+| [data/](data/) | Synthetic source transactions |
+| [analysis/](analysis/) | Summary CSVs, SQLite database and data-quality results |
+| [python/](python/) | pandas analysis script |
+| [sql/](sql/) | SQL analysis |
+| [docs/](docs/) | Business insights and project checks |
+| [assets/screenshots/](assets/screenshots/) | Dashboard screenshots |
+
+## Run the analysis
+
+1. Install Python and pandas: `pip install pandas`
 2. From the repository root, run `python python/analyze_real_estate.py`.
-3. Review the refreshed summary files under `analysis/`.
-4. Open `powerbi/Saudi_Real_Estate_Analytics.pbix` in Power BI Desktop.
-5. Open the `.pbip` file to edit the project structure.
+3. Review the generated summaries in `analysis/`.
+4. Open the `.pbix` file in Power BI Desktop. The `.pbip` version is also included for anyone who wants to explore the report definition and model.
 
-The SQL examples use a table named `transactions`; the supplied `analysis/real_estate.sqlite` database is included for query exploration.
+The SQL file expects a table called `transactions`; a SQLite database is included under `analysis/`.
 
-## Metric definitions
+## A note on the data
 
-- **Total transaction value:** Sum of transaction prices.
-- **Median transaction price:** Median of individual transaction prices.
-- **Weighted price per sqm:** Total transaction value divided by total transacted area.
-- **Mortgage share:** Mortgage-financed transactions divided by total transactions.
-- **YoY change:** Current-year transaction value divided by previous-year value, minus one.
+This is a **portfolio case study using synthetic data**, not official Saudi real estate statistics. It shows the analysis process and the kinds of decisions a dashboard could support. Before using an approach like this in practice, I'd validate it against real transaction records and business KPIs.
 
-## Validation and limitations
+The Power BI files and screenshots are included for review. Anyone using the editable project should check the data refresh and visual interactions in their own Power BI Desktop environment.
 
-The Power BI project definitions were structurally checked, but visual rendering, slicer behavior and data refresh were **not independently tested in Power BI Desktop**. The uploaded PBIX should be opened and checked before showcasing screenshots.
+---
 
-Synthetic data is useful for demonstrating analytics workflow and dashboard design; it does not establish actual Saudi market prices, growth rates or regional rankings.
-
-## Author
-
-[Ahmed Fazil](https://github.com/AhmedFazil007)
+**Ahmed Fazil** · [GitHub profile](https://github.com/AhmedFazil007)
