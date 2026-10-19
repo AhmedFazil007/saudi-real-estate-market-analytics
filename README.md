@@ -16,6 +16,20 @@ This project analyzes a synthetic dataset of Saudi real estate transactions by c
 
 The report was designed at **1920 × 1080** with an olive-green theme, KPI cards, charts and filter slicers.
 
+## Dashboard screenshots
+
+The five screenshots below are organized in upload timestamp order. They show the Power BI dashboard pages.
+
+![Dashboard screenshot 1](assets/screenshots/dashboard-page-01.png)
+
+![Dashboard screenshot 2](assets/screenshots/dashboard-page-02.png)
+
+![Dashboard screenshot 3](assets/screenshots/dashboard-page-03.png)
+
+![Dashboard screenshot 4](assets/screenshots/dashboard-page-04.png)
+
+![Dashboard screenshot 5](assets/screenshots/dashboard-page-05.png)
+
 ## Dataset and key indicators
 
 - **12,000** synthetic transactions across **10** cities
