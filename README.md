@@ -37,7 +37,7 @@ These figures describe the supplied simulated dataset only.
 | [sql/](sql/) | SQL queries |
 | [docs/](docs/) | Usage and submission guidance |
 
-**Outstanding file:** `powerbi/Saudi_Real_Estate_Analytics.SemanticModel/` is **not yet in this repository**. The PBIX is available, but the editable PBIP may not open independently until the semantic model directory is uploaded.
+**Repository status:** The PBIX, PBIP, report definition and semantic model are all uploaded. Local Power BI Desktop validation is still recommended.
 
 ## Reproduce the analysis
 
@@ -45,7 +45,7 @@ These figures describe the supplied simulated dataset only.
 2. From the repository root, run `python python/analyze_real_estate.py`.
 3. Review the refreshed summary files under `analysis/`.
 4. Open `powerbi/Saudi_Real_Estate_Analytics.pbix` in Power BI Desktop.
-5. Once the missing semantic model is uploaded, open the `.pbip` file to edit the project structure.
+5. Open the `.pbip` file to edit the project structure.
 
 The SQL examples use a table named `transactions`; the supplied `analysis/real_estate.sqlite` database is included for query exploration.
 
