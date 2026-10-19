@@ -2,7 +2,7 @@
 
 **Power BI · SQL · Python · Data storytelling**
 
-I wanted this project to go beyond a dashboard full of numbers. The idea was to explore how transaction data could help a real estate team ask better questions: Which cities deserve a closer look? Which property types account for the most value? Does a rise in transaction value mean more deals, or simply more expensive ones?
+I approached this as a property-market reporting exercise. Rather than stopping at total transaction value, I wanted to answer: Which cities deserve a closer look? Which property types account for the most value? Does a rise in transaction value mean more deals, or simply more expensive ones?
 
 I used **12,000 synthetic property transactions across 10 Saudi cities**, covering 2021–2025. The dataset is simulated, so the findings below are an exercise in analytics and business decision-making—not a description of the actual Saudi property market.
 
@@ -47,7 +47,7 @@ For the numbers behind these observations, see my [business case and recommendat
 
 ## Executive insights page plan
 
-I've documented a [proposed executive insights page](docs/EXECUTIVE_INSIGHTS_PAGE.md), including the key business findings, suggested layout, DAX examples and a Power BI Desktop QA checklist. This is a design specification; the native report has not yet been modified to include the extra page.
+My [executive insights page plan](docs/EXECUTIVE_INSIGHTS_PAGE.md), including the key business findings, suggested layout, DAX examples and a Power BI Desktop QA checklist. This is a design specification; the native report has not yet been modified to include the extra page.
 
 ## Tools and approach
 
